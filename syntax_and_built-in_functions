@@ -1,0 +1,93 @@
+#.len()
+long_list = [1, 5, 6, 7, -23, 69.5, True, "very", "long", "list", "that", "keeps", "going.", "Let's", "practice", "getting", "the", "length"]
+
+big_range = range(2, 3000, 10)
+
+# Your code below: 
+long_list_len = len(long_list)
+print(long_list_len)
+big_range_length = len(big_range)
+print(big_range_length)
+
+-----------------------------------
+#slicing list: letters[start:end]
+suitcase = ["shirt", "shirt", "pants", "pants", "pajamas", "books"]
+
+beginning = suitcase[0:2]
+
+# Your code below:
+print(beginning)
+middle = suitcase[2:4]
+print(middle)
+
+suitcase = ["shirt", "shirt", "pants", "pants", "pajamas", "books"]
+
+# Your code below: 
+last_two_elements = suitcase[-2:]
+print(last_two_elements)
+slice_off_last_three = suitcase[:-3]
+print(slice_off_last_three)
+# It's like you choose from index 0 to the -n index but without the -n index.
+# With the [-2:], imagine you slice from the -2 index to the 0 index (to the end) - the way it slices always goes to the right side.
+-----------------------------------
+#Counting a list 
+votes = ["Jake", "Jake", "Laurie", "Laurie", "Laurie", "Jake", "Jake", "Jake", "Laurie", "Cassie", "Cassie", "Jake", "Jake", "Cassie", "Laurie", "Cassie", "Jake", "Jake", "Cassie", "Laurie"]
+
+# Your code below: 
+jake_votes = votes.count("Jake")
+print(jake_votes) # Will print out 8
+number_collection = [[100, 200], [100, 200], [100, 29], [34, 34]]
+num_pairs = number_collection.count([100, 200]) # Will print out 2
+num_pairs = number_collection.count(100) # Will print out 0
+print(num_pairs)
+----------------------------------
+# Sorting lists I
+# Checkpoint 1 & 2
+addresses = ["221 B Baker St.", "42 Wallaby Way", "12 Grimmauld Place", "742 Evergreen Terrace", "1600 Pennsylvania Ave", "10 Downing St."]
+addresses.sort()
+print(addresses)
+# Checkpoint 3
+names = ["Ron", "Hermione", "Harry", "Albus", "Sirius"]
+names.sort()
+
+
+# Checkpoint 4 & 5
+cities = ["London", "Paris", "Rome", "Los Angeles", "New York"]
+sorted_cities = cities.sort()
+print(sorted_cities) # Will print out None because .sort() built-in function only modifies the list, now returns any value
+
+#You can also sort the list in the DESC order:
+cities = ["London", "Paris", "Rome", "Los Angeles", "New York"]
+cities.sort(reverse = True)
+print(cities)
+
+#Sorting list II
+games = ["Portal", "Minecraft", "Pacman", "Tetris", "The Sims", "Pokemon"]
+
+# Your code below:
+games_sorted = sorted(games)
+print(games)
+print(games_sorted)
+#sorted instead returns a new list and come before a list.
+-----------------------------
+.insert(index, object)
+.pop()
+range()
+len()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
